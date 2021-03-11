@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "react-app",
+    "@cowcoders/eslint-config/react"
+  ],
+  "plugins": [
+    "no-only-tests"
+  ],
+  "rules": {
+    "no-only-tests/no-only-tests": "error",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off"
+  }
+}

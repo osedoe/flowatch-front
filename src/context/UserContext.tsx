@@ -9,9 +9,9 @@ interface UserContextProviderProps {
 }
 
 export const UserContextProvider = ({ children }: UserContextProviderProps) => {
-    const [isLogged, setIsLogged] = useState();
+  const [isLogged, setIsLogged] = useState();
 
-    return <UserContext.Provider value={[isLogged, setIsLogged]}>
-        {children}
-    </UserContext.Provider>;
+  return <UserContext.Provider value={[isLogged, setIsLogged]}>
+    {children}
+  </UserContext.Provider>;
 };
