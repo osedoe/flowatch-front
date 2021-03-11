@@ -1,9 +1,12 @@
 import React from 'react';
-import { UserContext, UserContextProvider } from './context/UserContext';
+import { UserContextProvider } from './context/UserContext';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => <>
     <UserContextProvider>
-        <div>123</div>
+        <BrowserRouter>
+            <div>123</div>
+        </BrowserRouter>
     </UserContextProvider>
 </>;
 
