@@ -1,0 +1,18 @@
+:root {
+  --text-color: #F1F2F6;
+  --bg1: #30404D;
+  --font-primary: Roboto, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans JP', sans-serif;
+}
