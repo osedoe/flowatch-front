@@ -1,0 +1,13 @@
+:root {
+  --text-color: #F1F2F6;
+  --bg1: #30404D;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  font-family: Roboto, monospace;
+}
