@@ -8,6 +8,7 @@ export interface ThemeProps {
 
 const theme = createMuiTheme({
   palette: {
+    type: 'dark',
     primary: {
       main: '#2f515e',
       light: '#5b7d8b',
@@ -19,6 +20,10 @@ const theme = createMuiTheme({
       light: '#7ff9f9',
       dark: '#009595',
       contrastText: '#123d4f'
+    },
+    background: {
+      paper: '#2f515e',
+      default: '#30404D'
     }
   }
 });

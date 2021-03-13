@@ -22,7 +22,7 @@ const H1 = styled.h1`
   font-weight: bold;
 `;
 
-const P = styled.p`
+const Subtitle = styled.p`
   color: #009595;
   font-style: italic;
   margin: 0;
@@ -33,7 +33,7 @@ export const Header = () => {
   return <Container>
     <Heading>
       <H1>FLOWATCH</H1>
-      <P>Stay focused with the help of strangers!</P>
+      <Subtitle>Stay focused with the help of strangers!</Subtitle>
     </Heading>
 
   </Container>;
