@@ -19,6 +19,8 @@ const Block = styled.div`
 export const Home = () => {
   const history = useHistory();
 
+
+
   const handleLogin = () => {
     history.push('/');
   };
