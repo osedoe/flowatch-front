@@ -35,6 +35,5 @@ export const Header = () => {
       <H1>FLOWATCH</H1>
       <Subtitle>Stay focused with the help of strangers!</Subtitle>
     </Heading>
-
   </Container>;
 };
