@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8080 react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint --max-warnings 0 . --ext .ts,.tsx",
     "test": "react-scripts test",

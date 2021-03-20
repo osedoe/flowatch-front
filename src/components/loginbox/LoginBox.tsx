@@ -26,7 +26,9 @@ export const LoginBox = ({ onChange, onLogin }: LoginBoxProps) => {
     <Card raised>
       <CardContent>
         <form noValidate>
-          <h2>Login</h2>
+          <Block>
+            <h2>Login</h2>
+          </Block>
           <Block>
             <TextField label="Username" variant="filled" onChange={onChange('username')}/>
           </Block>
