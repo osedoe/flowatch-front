@@ -4,8 +4,12 @@ import { AppBar } from '@material-ui/core';
 import { Header } from '../header/Header';
 
 const Container = styled.div`
-  background: var(--bg1);
+  //background: var(--bg1);
   height: 100vh;
+
+  & > header {
+    box-shadow: none;
+  }
 `;
 
 const BodyWrapper = styled.div`
@@ -19,7 +23,7 @@ export interface LayoutProps {
 
 export const Layout = ({ children }: LayoutProps) => {
   return <Container>
-    <AppBar position="sticky">
+    <AppBar color="transparent">
       <Header/>
     </AppBar>
     <BodyWrapper>
