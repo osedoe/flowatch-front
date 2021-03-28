@@ -1,6 +1,6 @@
 :root {
-  --text-color: #F1F2F6;
-  --bg1: #30404D;
+  --dirty-white: #F1F2F6;
+  --green-blue1: #30404D;
   --font-primary: 'Noto Sans JP', sans-serif;
   --font-secondary: Roboto, monospace;
 }
@@ -10,8 +10,8 @@
 }
 
 body {
-  background: var(--bg1);
-  color: var(--text-color);
+  background: var(--green-blue1);
+  color: var(--dirty-white);
   font-family: var(--font-secondary);
 }
 
