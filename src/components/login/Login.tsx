@@ -10,8 +10,8 @@ const Area = styled.div`
 const Container = styled.div`
   background: #30404D;
   border-radius: 50px;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 `;
 
 const Icon = styled.span`
