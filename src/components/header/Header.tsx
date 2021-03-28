@@ -1,5 +1,7 @@
+import { Button } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
+import { Login } from '../login/Login';
 
 const Container = styled.div`
   display: grid;
@@ -20,16 +22,20 @@ const Nav = styled.nav`
 const Menu = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  //flex-direction: row;
-  //justify-content: space-between;
-  //align-items: center;
   padding: 15px 40px;
   grid-gap: 40px;
   height: 100%;
+
+  //& button {
+  //  color: var(--font-primary)
+  //}
 `;
 
 const Div = styled.div`
-  border: 2px solid red;
+  //border: 2px solid red;
+  background: #2f515e;
+  border-radius: 4px;
+  color: var(--dirty-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,22 +53,28 @@ const H1 = styled.h1`
   margin: 0;
 `;
 
-const Subtitle = styled.p`
-  color: #009595;
+const StyledBtn = styled(Button)`
+  //background: #009595 !important;
+  color: white;
   font-style: italic;
   margin: 0;
 `;
 
 export const Header = () => {
+  const onSignIn = (event: any) => {
+
+  };
+
   return <Container>
     <Heading>
       <H1>FLOWATCH</H1>
     </Heading>
     <Nav>
       <Menu>
-        <Div>CALLER</Div>
-        <Div>HOME / SETTINGS</Div>
-        <LoginWrapper>Log in / Sign up</LoginWrapper>
+        <Div>Caller</Div>
+        <Div>Home / Settings</Div>
+        {/*<Button variant="contained" color="secondary" fullWidth onClick={onSignIn}>Sign in / Sign up</Button>*/}
+        <Login/>
       </Menu>
     </Nav>
   </Container>;

@@ -5,7 +5,7 @@ import { InputProps as StandardInputProps } from '@material-ui/core/Input/Input'
 import { Layout } from '../components/layout/Layout';
 import { useUserContext } from '../context/UserContext';
 import { useLoginForm } from '../hooks/useLoginForm';
-import { LoginBox } from '../components/loginbox/LoginBox';
+import { LoginBox } from '../components/login/LoginBox';
 
 
 const SignInPage = () => {
