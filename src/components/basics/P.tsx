@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.p`
-  color: var(--text-color);
+  color: var(--dirty-white);
   margin: 0;
 `;
 
