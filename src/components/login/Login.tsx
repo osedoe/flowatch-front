@@ -27,9 +27,11 @@ export interface LoginProps {
 }
 
 export const Login = (props: LoginProps) => {
+
+
   return <Area>
     <Container>
-      <Icon>S</Icon>
+      <Icon>LOGIN ICON</Icon>
     </Container>
   </Area>;
 };

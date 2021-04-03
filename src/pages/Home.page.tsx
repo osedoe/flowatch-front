@@ -1,12 +1,8 @@
 import { Layout } from '../components/layout/Layout';
 
-export interface HomeProps {
-
-}
-
-const HomePage = (props: HomeProps) => {
+const HomePage = () => {
   return <Layout>
-    12312312312313
+    HOME PAGE
   </Layout>;
 };
 
