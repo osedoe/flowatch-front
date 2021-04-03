@@ -1,11 +1,14 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { AppBar } from '@material-ui/core';
 import { Header } from '../header/Header';
 
 const Container = styled.div`
-  background: var(--bg1);
+  //background: var(--bg1);
   height: 100vh;
+
+  & > header {
+    box-shadow: none;
+  }
 `;
 
 const BodyWrapper = styled.div`
@@ -19,9 +22,9 @@ export interface LayoutProps {
 
 export const Layout = ({ children }: LayoutProps) => {
   return <Container>
-    <AppBar position="sticky">
+    <div>
       <Header/>
-    </AppBar>
+    </div>
     <BodyWrapper>
       {children}
     </BodyWrapper>

@@ -1,30 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Nav } from './Nav';
 
-const Container = styled.header`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   height: 60px;
 `;
 
 const Heading = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
 `;
 
 const H1 = styled.h1`
-  margin: 0;
   font-weight: bold;
-`;
-
-const Subtitle = styled.p`
-  color: #009595;
-  font-style: italic;
   margin: 0;
 `;
 
@@ -33,7 +26,7 @@ export const Header = () => {
   return <Container>
     <Heading>
       <H1>FLOWATCH</H1>
-      <Subtitle>Stay focused with the help of strangers!</Subtitle>
     </Heading>
+    <Nav/>
   </Container>;
 };
