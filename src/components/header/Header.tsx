@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Nav } from './Nav';
 
+
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -15,29 +16,17 @@ const Heading = styled.div`
   padding: 10px 30px;
 `;
 
-
-const LoginWrapper = styled.div`
-  border: 2px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const H1 = styled.h1`
   font-weight: bold;
   margin: 0;
 `;
 
+
 export const Header = () => {
-  const onSignIn = (event: any) => {
-
-  };
-
   return <Container>
     <Heading>
       <H1>FLOWATCH</H1>
     </Heading>
     <Nav/>
   </Container>;
-
 };
