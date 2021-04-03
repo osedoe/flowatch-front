@@ -11,9 +11,15 @@ const Container = styled.div`
   height: 100%;
 `;
 
+const LoginWrapper = styled.div`
+  height: 300px;
+  width: 300px;
+`;
+
 const Block = styled.div`
   margin: 15px;
 `;
+
 
 export interface LoginBoxProps {
   onChange: (fieldName: string) => any; // TODO: Review type
@@ -22,7 +28,7 @@ export interface LoginBoxProps {
 
 export const LoginBox = ({ onChange, onLogin }: LoginBoxProps) => {
   return <Container>
-    <div>
+    <LoginWrapper>
       <form noValidate>
         <Block>
           <h2>Login</h2>
@@ -37,6 +43,6 @@ export const LoginBox = ({ onChange, onLogin }: LoginBoxProps) => {
           <button onClick={onLogin}>Sign in</button>
         </Block>
       </form>
-    </div>
+    </LoginWrapper>
   </Container>;
 };

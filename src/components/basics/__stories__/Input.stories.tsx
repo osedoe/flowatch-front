@@ -10,7 +10,7 @@ export default {
   }
 } as Meta;
 
-const Template: Story<InputProps> = (args) => <Input {...args}/>;
+const Template: Story<InputProps> = (args): JSX.Element => <Input {...args}/>;
 
 export const Text = Template.bind({});
 Text.args = {
