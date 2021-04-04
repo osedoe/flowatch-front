@@ -6,8 +6,8 @@ import { useDelayInputCollapse } from '../../hooks/useDelayInputCollapse';
 // TODO: Add tests
 // TODO: Add focus on input when clicking on label
 
-interface LabelProps {
-  shouldShrink: boolean;
+interface StyledProps {
+  shouldHideLabel: boolean;
 }
 
 const Container = styled.div`
@@ -19,13 +19,13 @@ const Container = styled.div`
   height: 40px;
 `;
 
-const Label = styled.label<LabelProps>`
-  font-size: ${props => props.shouldShrink ? '16px' : '10px'};
+const Label = styled.label<StyledProps>`
+  font-size: ${props => props.shouldHideLabel ? '16px' : '10px'};
   margin: 6px 0 3px;
 
   &:hover {
     color: var(--electric-blue);
-    cursor: ${props => props.shouldShrink ? 'pointer' : 'default'};
+    cursor: ${props => props.shouldHideLabel ? 'pointer' : 'default'};
   }
 `;
 
@@ -70,16 +70,13 @@ export const Input = (props: InputProps) => {
 
   const handleCollapse = () => {
     setShowInput(prevState => !prevState);
-    console.log(1);
-    inputRef.current?.focus();
+    setTimeout(() => inputRef.current?.focus(), 1);
   };
 
   const handleOnChange = ({ target: { value } }) => onChange(label, value);
 
   return <Container>
-    <Label shouldShrink={!showInput} htmlFor={label} onClick={handleCollapse}>{parsedLabel}</Label>
-    {showInput &&
-    <NativeInput ref={inputRef} name={label} type={type} onChange={handleOnChange} onBlur={handleCollapse}/>
-    }
+    <Label shouldHideLabel={!showInput} htmlFor={label} onClick={handleCollapse}>{parsedLabel}</Label>
+    {showInput && <NativeInput ref={inputRef} name={label} type={type} onChange={handleOnChange} onBlur={handleCollapse}/>}
   </Container>;
 };
