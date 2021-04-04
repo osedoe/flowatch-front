@@ -1,11 +1,24 @@
 :root {
+  --primary-main: #2F515E;
+  --primary-light: #5B7D8B;
+  --primary-dark: #012934;
+  --secondary-main: #45C6C6;
+  --secondary-light: #7FF9F9;
+  --secondary-dark: #009595;
+  --bg-paper: #2F515E;
+  --bg-default: #30404D;
+
   --dirty-white: #F1F2F6;
   --green-blue1: #30404D;
+  --electric-blue: #1EA7FD;
+
   --font-primary: 'Noto Sans JP', sans-serif;
   --font-secondary: Roboto, monospace;
 }
 
 * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
 
