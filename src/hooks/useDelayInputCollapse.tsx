@@ -9,7 +9,7 @@ export const useDelayInputCollapse = (
     let timer;
     timer = setTimeout(() => {
       setShowInput(false);
-    }, 200);
+    }, 1);
 
     return () => {
       clearTimeout(timer);

@@ -4,10 +4,10 @@ import { Input, InputProps } from '../Input';
 
 export default {
   title: 'Components/Input',
-  component: Input,
-  argTypes: {
-    backgroundColor: { control: 'color' }
-  }
+  component: Input
+  // argTypes: {
+  //   backgroundColor: { control: 'color' }
+  // }
 } as Meta;
 
 const Template: Story<InputProps> = (args): JSX.Element => <Input {...args}/>;
